@@ -17,12 +17,12 @@
       <a class="navbar-brand" href="#"><h1>Questions</h1></a>
               </div>
     </nav>  
-    <form>
+    <form method="POST" action="question_submit.php">
       <div class="row justify-content-sm-center">
         <div class="col-sm-8">
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Your Question ?</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="ques"></textarea>
           </div>
         </div>
       </div>
@@ -60,6 +60,7 @@
           </div>
         </div>
       </div>
+      <input type="submit" name="submit" value="Submit">
     </form>
   </div>
   <!-- Optional JavaScript -->
