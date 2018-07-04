@@ -1,0 +1,66 @@
+CREATE DATABASE quiz;
+
+USE quiz;
+
+CREATE TABLE players (
+  id INT AUTO_INCREMENT NOT NULL,
+  name VARCHAR(255) NOT NULL, 
+  password VARCHAR(255) NOT NULL, 
+  email VARCHAR(255) NOT NULL, 
+  birthday VARCHAR(255), 
+  gender ENUM('M', 'F'),
+  PRIMARY KEY(ID)
+);
+
+
+CREATE TABLE questions (
+  id INT AUTO_INCREMENT NOT NULL,
+  question VARCHAR(255) NOT NULL, 
+  is_active ENUM('T', 'F'),
+  marks INT NOT NULL,
+  PRIMARY KEY(id)
+);
+CREATE TABLE choices (
+  id INT AUTO_INCREMENT NOT NULL,
+  choice VARCHAR(255) NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE questions_choices (
+  id INT AUTO_INCREMENT NOT NULL,
+  question_id INT NOT NULL, 
+  choice_id INT NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY(choice_id) REFERENCES choices(id),
+  FOREIGN KEY(question_id) REFERENCES questions(id)
+);
+
+CREATE TABLE answers (
+  id INT AUTO_INCREMENT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  is_right ENUM('T','F'),
+  PRIMARY KEY(id)
+);
+ 
+ CREATE TABLE players_questions_answers(
+  id INT AUTO_INCREMENT NOT NULL,
+  player_id INT NOT NULL,
+  question_id INT NOT NULL, 
+  answer_id INT NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY(player_id) REFERENCES players(id),
+  FOREIGN KEY(question_id) REFERENCES questions(id),
+  FOREIGN KEY(answer_id) REFERENCES answers(id)
+);
+
+CREATE TABLE rankings (
+  id INT AUTO_INCREMENT NOT NULL,
+  total_marks INT NOT NULL,
+  time_taken VARCHAR(255) NOT NULL,
+  player_id INT NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY(player_id) REFERENCES players(id)
+);
+
+
+ 
