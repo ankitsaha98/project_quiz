@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login Portal</title>       
+        <title>Login Portal</title>        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/page3.css">
     </head>
     <body>
-        <h2>LOGIN FORM</h2>
-        
-        <form method="post" action="login_submit.php">
-            Your Email:<input type="email" name="email"/> <br/>
-            Enter password:<input type="password" name="password"/> <br/>
-            <input type="submit" name="submit">
-        </form>
-    <body/>
-<html/> 
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand" href="#"><h2>Welcome to Quizzit</h2></a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand" href="#"><h3>LOGIN FORM</h3></a>
+                </div>
+             </nav>
+             <form method="post" action="login_submit.php">
+                 <div class="row justify-content-sm-center">
+                     <div class="col-sm-8">
+                         <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Enter email">
+                         </div>
+                     </div>
+                  </div>
+                  <div class="row justify-content-sm-center">
+                     <div class="col-sm-8">
+                         <div class="form-group">
+                             <label for="exampleInputcPassword1">Password</label>
+                             <input type="password" class="form-control" id="exampleInputcPassword1" name="Password">
+                         </div>
+                     <div>
+                 </div>
+                 <div class="row justify-content-sm-center">
+                     <button type="submit">Submit</button>
+                 </div>
+                 </form>
+            </div>
+        <body>
+ <html/> 
