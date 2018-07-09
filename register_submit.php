@@ -1,7 +1,7 @@
 <?php
 	$hostname="localhost";
 	$username="root";
-	$password="123456";                                      
+	$password="narayan1";                                      
 	$database="quizzer";
 	$conn=mysqli_connect($hostname,$username,$password,$database);
 	if (!$conn) {
@@ -14,7 +14,7 @@
 	$gender = $_POST['gender'];
 	$phone = $_POST['phone'];
 	
-	$sql="INSERT INTO users(name,gender,email,password,phone) VALUES('$name','$gender','$email','$pass','$phone')";
+	$sql="INSERT INTO users(name,email,password,gender,phone) VALUES('$name','$email','$pass','$gender','$phone')";
     if (mysqli_query($conn,$sql)) {
     	echo "Registration successful";
     }else{
