@@ -76,6 +76,18 @@
                     <button type="submit" class="btn btn-primary m-2 justify-content-sm-center">Submit</button>
             </form>
         </div>
-        <script type="text/javascript" src="JS/check.js"></script>
+        <script type="text/javascript">
+        	document.getElementById('password2').onblur=function () {
+
+
+
+        		var p1=document.getElementById('exampleInputcPassword1').value;
+        		var p2=document.getElementById('password2').value;
+        		if (p1!=p2) {
+        			alert ("not matched");
+        			return false;
+        		}
+        	}
+        </script>
     <body/>
 <html/>     
