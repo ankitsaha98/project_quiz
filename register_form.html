@@ -16,64 +16,73 @@
                     <a class="navbar-brand" href="#"><h2>Welcome to Quizzit</h2></a>
                 </div>
             </nav>
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="mx-auto order-0">
                     <a class="navbar-brand" href="#"><h3>REGISTRATION FORM</h3></a>
                 </div>
             </nav>
-            <form method="post" action="register_submit.php">
-                 <div class="row justify-content-sm-center">
+            <form id="registration-form" method="post" action="register_submit.php">
+                <div class="row justify-content-sm-center">
                     <div class="col-sm-8">
-                       <div class="form-group">
-                          <label for="exampleInputName1">Your Name</label>
-                          <input type="text" class="form-control" id="exampleInputName1" required="required" aria-describedby="nameHelp" name="Enter Name">
-                       </div>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Your Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1"  required="required" aria-describedby="nameHelp"          name="name">
+                        </div>
                     </div>
-                 </div>
-                 <div class="row justify-content-sm-center">
+                </div>
+                <div class="row justify-content-sm-center">
                     <div class="col-sm-8">
-                       <div class="form-group">
-                           <label for="exampleInputEmail1">Email Address</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" required="required" aria-describedby="emailHelp" name="Enter email">
-                       </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control id="exampleInputEmail1" required="required" aria-describedby="emailHelp" name="email">
+                        </div>
                     </div>
-                 </div>
-                 <div class="row justify-content-sm-center">
-                     <div class="col-sm-8">
-                         <div class="form-group">
-                             <label for="exampleInputcPassword1">Password</label>
-                             <input type="password" class="form-control" required="required" id="exampleInputcPassword1" name="Password">
-                         </div>
-                     <div>
-                 </div>
-                 <div class="row justify-content-sm-center">
-                     <div class="col-sm-12">
-                         <div class="form-group">
-                             <label for="exampleInputpassword2">Confirm password:</label>
-                             <input type="password" class="form-control" id="password2" required="required" name="password">
-                         </div>
-                     </div>
-                 </div>
-                 <div class="row justify-content-sm-center">
-                    <div class="col-sm-12">
-                         <div class="form-group">
-                             <h4>Gender</h4>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="exampleInputcPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputcPassword1" required="required"  name="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="exampleInputpassword2">Confirm password:</label>
+                            <input type="password" class="form-control" id="exampleInputcPassword2"required="required" name="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="input_gender">Gender:</label>
                             <input type="radio" name="gender" value="male"/>Male
                             <input type="radio"  name="gender" value="female"/>Female
                             <input type="radio"  name="gender" value="others"/>Others 
-                         </div>
-                     </div>
-                  </div>
-                  <div class="row justify-content-sm-center">
-                     <div class="col-sm-12">
-                         <div class="form-group">
-                            <label for="exampleInputphone">Mobile No</label>
-                             <input type="text" class="form-control" id="exampleInputphone" name="phone"/>
-                         </div>
+                        </div>
                     </div>
-                 </div>
-                    <button type="submit" class="btn btn-primary m-2 justify-content-sm-center">Submit</button>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="exampleInputphone">Mobile No</label>
+                            <input type="text" class="form-control" id="exampleInputphone" name="phone"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary m-2 justify-content-sm-center">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                
             </form>
+            <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="js/ajax.js"></script>
         </div>
-    <body/>
-<html/>     
+    </body>
+</html>     
