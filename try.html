@@ -1,61 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>mypage</title>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="header">
-    <h1>QUIZZIT</h1>
-    <p>The online quizzing platform for inquizzitive minds.</p>
-  </div>
-  <div class="topnav">
-    <a href="https://www.instagram.com">Instagram</a>
-    <a href="https://www.facebook.com">Facebook</a>
-    <a href="https://www.twitter.com">Twitter</a>
-    <a href="login_form.html" style="float:right">Login</a>
-    <a href="register_form.html" style="float:right">Register with us</a>
-  </div>
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2 style="color: dodgerblue;">How it works</h2>
-        <h4 style="color: seagreen;">Nothing special just giving 10 minutes of your time.</h4>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-     </div>
+    <div class="container-fluid bg-white">      
+        <h1><p class="text-center">QUIZZIT</p></h1>
+        <h4><p class="text-right">The realm of inquizzitive minds</p></h4>      
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About US</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">
-        <h3>Popular ADVANCEMENTS</h3>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
-        <div class="fakeimg"><p>Image</p></div>
-     </div>
-     <div class="card" style="height:212px;margin-bottom: 20px">
-      <h3>Follow US</h3>
-      <p>Some text..
-      Form not calm new fail.To shewing another demands to.  Clothes parlors however by cottage on. In views it or meant drift to.Remainder northwarrk from rich. He always drthwarrk from rich. He always do do former he highly. </p>
-      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="p-2 col-4 bg-white">
+                <div class="col">
+                    <div class="p-2 col-12 bg-white">
+                        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Upcoming Matches</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Today's Matches</h5>
+                                <p class="card-text">8:00 pm- The Literature Quiz <br> 10:00 pm- IT-Quiz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 col-12 bg-white">
+                        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+                            <div class="card-header">
+                                This week's leaderboard
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush text-white bg-dark">
+                                    <li class="list-group-item" style="color: darkblue">Ankit Saha</li>
+                                    <li class="list-group-item" style="color: darkblue">Siddharth Agarwal</li>
+                                    <li class="list-group-item" style="color: darkblue">Narayan Pandey</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 col-12 bg-white">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media Corner</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go to Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-6 bg-white">
+                <div class="col">
+                    <div class="p-2 col-12 bg-white">
+                        <h1>How are quizzes are like!!!!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-1 bg-white"><a href="login_form.html"><h4>Login</h4></a></div>
+            <div class="p-2 col-1 bg-white"><a href="register_form.html"><h4>Register</h4></a></div>
+        </div>
+        <div class="row">
+            <div class="p-2 col-4 bg-white">
+                <div class="card border-light mb-3" style="max-width: 28rem;">
+                    <div class="card-header">Quizzing</div>
+                    <div class="card-body">
+                        <h5 class="card-title">What is it?</h5>
+                        <p class="card-text">The Oxford English Dictionary attests the use of the verb quiz to mean "to question or interrogate", with a reference from 1843: "She com back an' quiesed us", which could be a clue to its origin. The American Heritage Dictionary says it may be from the English dialect verb quiset, meaning "to question". In any case it is probably from the same root as question and inquisitive.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-4 bg-white">
+                <div class="card bg-dark text-black">
+                    <img class="card-img" src="images/quiz2.jpeg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-4 bg-white">
+                <h1>Archives</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 bg-white">
+                <div class="col">
+                    <div class="p-4 col-12 bg-white">
+                        <nav class="navbar navbar-light bg-light">
+                        <span class="navbar-text">
+                        About us: We are a bunch of like-minded jobless engineers
+                        </span>
+                        </nav>
+                        <nav class="navbar navbar-light bg-light">
+                        <span class="navbar-text">
+                        Contact us: We are present everywhere: Facebook,Twitter, LinkedIn, Instagram.
+                        </span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-4 bg-white">
+                <p>Developed by:Ankit Saha <br> Siddharth AGarwal <br> Narayan Pandey </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="footer">
-    <h2 style="margin: 0px 40px 20px 40px">OUR ACCOMPLISHMENTS</h2>
-    <p style="color: darkslategrey">Remainder northwarrk from rich. He always do do former he highly. Remainder northwarrk from rich. He always do do former he highly.</p>
-  </div>
 </body>
 </html>
-
